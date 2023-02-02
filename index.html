@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Admin UI</title>
+</head>
+
+<body>
+    <div>
+        <input class="search" type="text" id="search" placeholder="search by name, email or role" onkeyup="searchFilter();">
+    </div>
+    <div class="table-box">
+        <table id="user-table">
+            <thead>
+                <tr class="table-row">
+                    <th><input type="checkbox" id="AllEleSelected" name="horns" onclick="selectAll()"></th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </div>
+    <div class="table-footer">
+        <button class="delete-button" onclick="deleteAll()">Delete Selected</button>
+        <div id="pagination-buttons">
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./src/modules/userlist.js"></script>
+    <script type="text/javascript" src="./src/modules/searchUser.js"></script>
+    <script type="text/javascript" src="./src/modules/updateUser.js"></script>
+    <script type="text/javascript" src="./src/modules/pagination.js"></script>
+</body>
+
+</html>
